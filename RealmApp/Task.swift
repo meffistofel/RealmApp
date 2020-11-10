@@ -14,7 +14,7 @@ class Task: Object {
     @objc dynamic var date = Date()
     @objc dynamic var isComplete = false
 }
-
+//model
 class TaskList: Object {
     @objc dynamic var name = ""
     @objc dynamic var date = Date()

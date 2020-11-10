@@ -11,6 +11,7 @@ import UIKit
 class AlertController: UIAlertController {
     
     var doneButton = "Save"
+    var log  = "On"
         
     func action(with taskList: TaskList?, completion: @escaping (String) -> Void) {
         
@@ -24,9 +25,8 @@ class AlertController: UIAlertController {
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
         
-        
-        addAction(cancelAction)
         addAction(saveAction)
+        addAction(cancelAction)
         addTextField { textField in
             textField.placeholder = "List Name"
             textField.text = taskList?.name
